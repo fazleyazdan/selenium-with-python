@@ -22,7 +22,6 @@ driver = webdriver.Chrome(options=options, service=ser_obj)
 
 # if a response takes 5 sec to display an element. and we specified 10 sec to wait
 # in that case imp wait will use the 5 sec and as soon as the element is displayed it won't wait
-# and will jump to next statement resulting in speedy script and good performance
 
 # cons:
 # if the element is not available within the mentioned time there is chance of getting exception
