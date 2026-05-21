@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+selenium = "*"
+pytest = "*"
+python-dotenv = "*"
+webdriver-manager = "*"
+allure-pytest = "*"
+pytest-bdd = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

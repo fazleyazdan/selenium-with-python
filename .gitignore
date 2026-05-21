@@ -1,0 +1,6 @@
+selenium-env/
+.env
+Pipfile.lock
+.pytest_cache
+.vscode
+__pycache__
