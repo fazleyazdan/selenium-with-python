@@ -10,11 +10,11 @@ class LoginPage:
     def __init__(self, driver):
         self.driver = driver
 
-    def enter_username(self):
-        type_text(self.driver, self.USERNAME, "tomsmith")
+    def enter_username(self, username):
+        type_text(self.driver, self.USERNAME, username)
 
-    def enter_password(self):
-        type_text(self.driver, self.PASSWORD, "SuperSecretPassword!")
+    def enter_password(self, password):
+        type_text(self.driver, self.PASSWORD, password)
 
     def click_login(self):
         click(self.driver, self.LOGIN_BTN)

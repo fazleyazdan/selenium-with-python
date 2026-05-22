@@ -1,7 +1,13 @@
 from pytest_bdd import given, when, then, scenarios
 from pages.login_page import LoginPage
+from dotenv import load_dotenv
+import os
 
 scenarios("../features/login.feature")
+
+load_dotenv(override=True)
+username = os.getenv("USERNAME")
+password = os.getenv("PASSWORD")
 
 @given("user is on login page")
 def open_login(driver):
@@ -10,8 +16,8 @@ def open_login(driver):
 @when("user enters valid username and password")
 def enter_credentials(driver):
     login = LoginPage(driver)
-    login.enter_username()
-    login.enter_password()
+    login.enter_username(username)
+    login.enter_password(password)
 
 
 @when("clicks login button")
