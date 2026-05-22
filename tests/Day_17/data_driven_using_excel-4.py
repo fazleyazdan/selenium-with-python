@@ -8,7 +8,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-import excel_utils
+import tests.Day_17.excel_utils as excel_utils
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
