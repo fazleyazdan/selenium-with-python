@@ -19,7 +19,7 @@ def enter_credentials(driver):
     login.enter_username(username)
     login.enter_password(password)
 
-
+ 
 @when("clicks login button")
 def click_login(driver):
     login = LoginPage(driver)
