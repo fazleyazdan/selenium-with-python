@@ -20,7 +20,7 @@ def get_driver():
     )
 
     driver.implicitly_wait(10)
-
+ 
     return driver
 
 def click(driver, locator):
