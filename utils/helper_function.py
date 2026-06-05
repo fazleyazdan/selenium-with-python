@@ -33,7 +33,7 @@ def type_text(driver, locator, text):
 
 def get_text(driver, locator):
     return driver.find_element(*locator).text
- 
+  
 
 def wait_for_element(driver, locator, timeout=10):
     return WebDriverWait(driver, timeout).until(
